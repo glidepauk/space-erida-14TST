@@ -1,4 +1,4 @@
-# Errors
+﻿# Errors
 loadout-group-species-restriction = Этот предмет недоступен для вашего текущего вида.
 
 # Miscellaneous
@@ -44,6 +44,7 @@ loadout-group-chef-head = Шеф-повар, голова
 loadout-group-chef-mask = Шеф-повар, маска
 loadout-group-chef-jumpsuit = Шеф-повар, комбинезон
 loadout-group-chef-outerclothing = Шеф-повар, верхняя одежда
+loadout-group-bartender-shaker = Шейкер бармена
 loadout-group-librarian-jumpsuit = Библиотекарь, комбинезон
 loadout-group-lawyer-jumpsuit = Адвокат, комбинезон
 loadout-group-lawyer-neck = Адвокат, шея

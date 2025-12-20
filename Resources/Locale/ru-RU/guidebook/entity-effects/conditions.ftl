@@ -1,4 +1,4 @@
-entity-condition-guidebook-total-damage =
+﻿entity-condition-guidebook-total-damage =
     { $max ->
         [2147483648] тело имеет по крайней мере { NATURALFIXED($min, 2) } общего урона
        *[other]
@@ -46,6 +46,8 @@ entity-condition-guidebook-reagent-threshold =
     }
 
 entity-condition-guidebook-mob-state-condition = пациент в { $state }
+entity-condition-guidebook-job-condition =
+    должность цели : { $job }
 
 reagent-effect-condition-guidebook-job-condition = должность цели — { $job }
 
