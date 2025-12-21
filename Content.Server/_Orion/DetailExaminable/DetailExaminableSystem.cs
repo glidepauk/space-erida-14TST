@@ -65,6 +65,7 @@ public sealed class DetailExaminableSystem : EntitySystem
             GetNetEntity(target),
             Identity.Name(target, EntityManager),
             humanoid.Species.Id,
+            humanoid.CustomSpecies, // Erida
             humanoid.Sex,
             humanoid.Gender,
             detail.Content,

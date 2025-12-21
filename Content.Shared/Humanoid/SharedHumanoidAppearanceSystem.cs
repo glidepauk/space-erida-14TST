@@ -124,7 +124,10 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         var species = GetSpeciesRepresentation(component.Species).ToLower();
         var age = GetAgeRepresentation(component.Species, component.Age);
 
-        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+        // Erida-start
+        string currentSpecies = string.IsNullOrEmpty(component.CustomSpecies) ? species : component.CustomSpecies;
+        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", currentSpecies)));
+        // Erida-end
     }
 
     /// <summary>
@@ -162,6 +165,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             return;
 
         targetHumanoid.Species = sourceHumanoid.Species;
+        targetHumanoid.CustomSpecies = sourceHumanoid.CustomSpecies; // Erida
         targetHumanoid.SkinColor = sourceHumanoid.SkinColor;
         targetHumanoid.EyeColor = sourceHumanoid.EyeColor;
         targetHumanoid.Age = sourceHumanoid.Age;
@@ -272,6 +276,21 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (sync)
             Dirty(uid, humanoid);
     }
+
+    // Erida-start
+    public void SetCustomSpecies(EntityUid uid, string customspecies, bool sync = true, HumanoidAppearanceComponent? humanoid = null)
+    {
+        if (!Resolve(uid, ref humanoid))
+        {
+            return;
+        }
+
+        humanoid.CustomSpecies = customspecies;
+
+        if (sync)
+            Dirty(uid, humanoid);
+    }
+    // Erida-end
 
     /// <summary>
     /// Sets the gender in the entity's HumanoidAppearanceComponent and GrammarComponent.
@@ -406,6 +425,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         SetSpecies(uid, profile.Species, false, humanoid);
+        SetCustomSpecies(uid, profile.CustomSpecies, false, humanoid); // Erida
         SetSex(uid, profile.Sex, false, humanoid);
         humanoid.EyeColor = profile.Appearance.EyeColor;
 
@@ -543,7 +563,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (sync)
             Dirty(uid, humanoid);
     }
-    
+
     // Corvax-TTS-Start
     // ReSharper disable once InconsistentNaming
     public void SetTTSVoice(EntityUid uid, string voiceId, HumanoidAppearanceComponent humanoid)

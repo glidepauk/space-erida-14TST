@@ -111,6 +111,11 @@ namespace Content.Shared.Preferences
         [DataField]
         public ProtoId<SpeciesPrototype> Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
 
+        // Erida-start
+        [DataField]
+        public string CustomSpecies { get; set; } = string.Empty;
+        // Erida end
+
         [DataField]
         public string Voice { get; set; } = SharedHumanoidAppearanceSystem.DefaultVoice; // Corvax-TTS
 
@@ -181,6 +186,7 @@ namespace Content.Shared.Preferences
             string nsfwtagsflavortext,
             // Erida end
             string species,
+            string customspecies, // Erida
             string voice, // Corvax-TTS
             int age,
             Sex sex,
@@ -211,6 +217,7 @@ namespace Content.Shared.Preferences
             NSFWTagsFlavorText = nsfwtagsflavortext;
             // Erida end
             Species = species;
+            CustomSpecies = customspecies; // Erida
             Voice = voice; // Corvax-TTS
             Age = age;
             Sex = sex;
@@ -258,6 +265,7 @@ namespace Content.Shared.Preferences
                 other.NSFWTagsFlavorText,
                 // Erida ends
                 other.Species,
+                other.CustomSpecies, // Erida
                 other.Voice, // Corvax-TTS
                 other.Age,
                 other.Sex,
@@ -447,6 +455,13 @@ namespace Content.Shared.Preferences
         {
             return new(this) { Species = species };
         }
+
+        // Erida-start
+        public HumanoidCharacterProfile WithCustomSpecies(string customspecies)
+        {
+            return new(this) { CustomSpecies = customspecies };
+        }
+        // Erida-end
 
         // Corvax-TTS-Start
         public HumanoidCharacterProfile WithVoice(string voice)

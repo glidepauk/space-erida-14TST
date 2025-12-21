@@ -17,6 +17,7 @@ public sealed class DetailExaminableEuiState : EuiStateBase
     public NetEntity Target;
     public string Name = string.Empty;
     public ProtoId<SpeciesPrototype> Species = string.Empty;
+    public string CustomSpecies = string.Empty; // Erida
     public Sex Sex;
     public Gender Gender;
     public string FlavorText = string.Empty;
@@ -38,6 +39,7 @@ public sealed class DetailExaminableEuiState : EuiStateBase
         NetEntity target,
         string name,
         ProtoId<SpeciesPrototype> species,
+        string customSpecies, // Erida
         Sex sex,
         Gender gender,
         string flavorText,
@@ -57,6 +59,7 @@ public sealed class DetailExaminableEuiState : EuiStateBase
         Target = target;
         Name = name;
         Species = species;
+        CustomSpecies = customSpecies; // Erida
         Sex = sex;
         Gender = gender;
         FlavorText = flavorText;

@@ -292,6 +292,7 @@ namespace Content.Server.Database
                 profile.NSFWTagsFlavorText,
                 // Erida end
                 profile.Species,
+                profile.CustomSpecies, // Erida
                 voice, // Corvax-TTS
                 profile.Age,
                 sex,
@@ -344,6 +345,7 @@ namespace Content.Server.Database
             profile.NSFWTagsFlavorText = humanoid.NSFWTagsFlavorText;
             // Erida end
             profile.Species = humanoid.Species;
+            profile.CustomSpecies = humanoid.CustomSpecies;
             profile.Voice = humanoid.Voice; // Corvax-TTS
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();

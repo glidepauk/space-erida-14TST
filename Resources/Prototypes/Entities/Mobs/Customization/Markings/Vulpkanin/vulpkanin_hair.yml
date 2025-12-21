@@ -1,8 +1,10 @@
+# ERIDA - COMMENT ALL speciesRestriction
+
 # Hairs
 - type: marking
   id: VulpHairAdhara
   bodyPart: Hair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   markingCategory: Hair
   canBeDisplaced: false
   sprites:
@@ -12,7 +14,7 @@
 - type: marking
   id: VulpHairAnita
   bodyPart: Hair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   markingCategory: Hair
   canBeDisplaced: false
   sprites:
@@ -22,7 +24,7 @@
 - type: marking
   id: VulpHairApollo
   bodyPart: Hair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   markingCategory: Hair
   canBeDisplaced: false
   sprites:
@@ -32,7 +34,7 @@
 - type: marking
   id: VulpHairBelle
   bodyPart: Hair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   markingCategory: Hair
   canBeDisplaced: false
   sprites:
@@ -44,7 +46,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: braided
@@ -54,7 +56,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: bun
@@ -64,7 +66,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: clean_cut
@@ -74,7 +76,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: curl
@@ -84,7 +86,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: hawk
@@ -94,7 +96,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: jagged
@@ -104,7 +106,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: jeremy
@@ -114,7 +116,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: kajam
@@ -124,7 +126,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: keid
@@ -134,7 +136,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: kleeia
@@ -144,7 +146,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: mizar
@@ -154,7 +156,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: punkbraided
@@ -164,7 +166,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: raine
@@ -174,7 +176,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: rough
@@ -184,7 +186,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: short
@@ -194,7 +196,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: short2
@@ -204,7 +206,7 @@
   bodyPart: Hair
   markingCategory: Hair
   canBeDisplaced: false
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/hair.rsi
       state: spike
@@ -214,7 +216,7 @@
   id: VulpFacialHairRuff
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   canBeDisplaced: false
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/facial_hair.rsi
@@ -224,7 +226,7 @@
   id: VulpFacialHairElder
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   canBeDisplaced: false
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/facial_hair.rsi
@@ -234,7 +236,7 @@
   id: VulpFacialHairElderChin
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   canBeDisplaced: false
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/facial_hair.rsi
@@ -244,7 +246,7 @@
   id: VulpFacialHairKita
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   canBeDisplaced: false
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/facial_hair.rsi
@@ -254,7 +256,7 @@
   id: VulpFacialHairGoatee
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   canBeDisplaced: false
   sprites:
   - sprite: Mobs/Customization/Vulpkanin/facial_hair.rsi

@@ -44,11 +44,21 @@
 - type: markingPoints
   id: MobShadowkinMarkingLimits
   points:
+    # Erida-start
+    Head:
+      points: 10
+      required: false
+    HeadSide:
+      points: 10
+      required: false
     Hair:
-      points: 1
+      points: 10
       required: false
     FacialHair:
-      points: 1
+      points: 10
+      required: false
+    Snout:
+      points: 10
       required: false
     Tail:
       points: 1
@@ -59,15 +69,18 @@
       required: true
       defaultMarkings: [EarsShadowkin]
     Chest:
-      points: 1
+      points: 10
       required: false
     Legs:
-      points: 2
+      points: 10
       required: false
     Arms:
-      points: 2
+      points: 10
       required: false
-
+    Overlay:
+      points: 10
+      required: false
+    # Erida-end
 - type: humanoidBaseSprite
   id: MobShadowkinAnyMarking
 

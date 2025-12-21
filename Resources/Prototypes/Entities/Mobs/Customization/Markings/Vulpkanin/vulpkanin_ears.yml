@@ -1,10 +1,12 @@
+# ERIDA - COMMENT ALL speciesRestriction
+
 
 # Ears Markings
 - type: marking
   id: VulpEar
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: vulp
@@ -15,7 +17,7 @@
   id: VulpEarSharp
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: vulp
@@ -28,7 +30,7 @@
   id: VulpEarFade
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: vulp
@@ -41,7 +43,7 @@
   id: VulpEarJackal
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: jackal
@@ -52,7 +54,7 @@
   id: VulpEarTerrier
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: terrier
@@ -63,7 +65,7 @@
   id: VulpEarFennec
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: fennec
@@ -74,7 +76,7 @@
   id: VulpEarFox
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: fox
@@ -85,7 +87,7 @@
   id: VulpEarOtie
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: otie
@@ -96,7 +98,7 @@
   id: VulpEarShock
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: shock
@@ -107,7 +109,7 @@
   id: VulpEarCoyote
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+#  speciesRestriction: [ Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: coyote
