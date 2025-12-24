@@ -54,7 +54,6 @@
             sprite: _Orion/Mobs/Species/displacement.rsi
             state: shoes
     # Orion-End
-  - type: RoarAccent
   - type: Vocal
     sounds:
       Male: MaleHuman

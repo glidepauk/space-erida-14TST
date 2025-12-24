@@ -19,12 +19,12 @@ namespace Content.Server.Speech.EntitySystems
             { "Ah", "Arf" },
             { "oh", "oof" },
             { "Oh", "Oof" },
-            // Localisation-Start
+            // Erida-Loc-Start
             { "га", "гаф" },
             { "Га", "Гаф" },
             { "угу", "вуф" },
             { "Угу", "Вуф" },
-            // Localisation-End
+            // Erida-Loc-End
         };
 
         public override void Initialize()
@@ -42,7 +42,7 @@ namespace Content.Server.Speech.EntitySystems
 
             return message.Replace("!", _random.Pick(Barks))
                 .Replace("l", "r").Replace("L", "R")
-                .Replace("л", "Л").Replace("Л", "Р"); // Localisation
+                .Replace("л", "Л").Replace("Л", "Р"); // Erida-Loc
         }
 
         private void OnAccent(Entity<BarkAccentComponent> entity, ref AccentGetEvent args)

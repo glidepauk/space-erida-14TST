@@ -17,12 +17,12 @@ namespace Content.Server.Speech.EntitySystems
         {
             { "you", "wu" },
             { "You", "Wu" },
-            // Localisation-Start
+            // Erida-Loc-Start
             { "ты", "ти" },
             { "Ты", "Ти" },
             { "вы", "ви" },
             { "Вы", "Ви" },
-            // Localisation-End
+            // Erida-Loc-End
         };
 
         public override void Initialize()
@@ -41,10 +41,10 @@ namespace Content.Server.Speech.EntitySystems
             return message.Replace("!", _random.Pick(Faces))
                 .Replace("r", "w").Replace("R", "W")
                 .Replace("l", "w").Replace("L", "W")
-                // Localisation-Start
+                // Erida-Loc-Start
                 .Replace("р", "в").Replace("Р", "В")
                 .Replace("л", "в").Replace("Л", "В");
-                // Localisation-End
+                // Erida-Loc-End
         }
 
         private void OnAccent(Entity<OwOAccentComponent> entity, ref AccentGetEvent args)

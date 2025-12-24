@@ -35,19 +35,19 @@ public sealed class LizardAccentSystem : EntitySystem
         // eckS
         message = RegexUpperEndX.Replace(message, "ECKS$1");
 
-        // Localisation-Start
-        // c > ccc
+        // erida-loc-start
+        // c > ccc / С > ССС
         message = Regex.Replace(message, "с+", _random.Pick(new List<string>() { "сс", "ссс" }));
         message = Regex.Replace(message, "С+", _random.Pick(new List<string>() { "СС", "ССС" }));
 
-        // ш > шшш
+        // ш > шшш / Ш > ШШШ
         message = Regex.Replace(message, "ш+", _random.Pick(new List<string>() { "шш", "шшш" }));
         message = Regex.Replace(message, "Ш+", _random.Pick(new List<string>() { "ШШ", "ШШШ" }));
 
-        // ч > щщщ
+        // ч > щщщ / Ч > ЩЩЩ
         message = Regex.Replace(message, "ч+", _random.Pick(new List<string>() { "щщ", "щщщ" }));
         message = Regex.Replace(message, "Ч+", _random.Pick(new List<string>() { "ЩЩ", "ЩЩЩ" }));
-        // Localisation-End
+        // erida-loc-end
 
         args.Message = message;
     }

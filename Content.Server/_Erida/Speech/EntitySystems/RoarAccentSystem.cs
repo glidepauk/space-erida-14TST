@@ -19,9 +19,11 @@ public sealed class RoarAccentSystem : EntitySystem
     {
         var message = args.Message;
 
+        // r > rrr / R > RRR
         message = Regex.Replace(message, "r+", _random.Pick(new List<string>() { "rr", "RRR" }));
         message = Regex.Replace(message, "R+", _random.Pick(new List<string>() { "RR", "RRR" }));
 
+        // р > ррр / Р > РРР
         message = Regex.Replace(message, "р+", _random.Pick(new List<string>() { "рр", "ррр" }));
         message = Regex.Replace(message, "Р+", _random.Pick(new List<string>() { "РР", "РРР" }));
 

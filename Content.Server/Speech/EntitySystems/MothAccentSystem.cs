@@ -26,10 +26,15 @@ public sealed class MothAccentSystem : EntitySystem
         // buZZZ
         message = RegexUpperBuzz.Replace(message, "ZZZ");
 
-        // Localisation-Start
+        // Erida-Loc-Start
+        // ж > жжж
         message = Regex.Replace(message, "ж+", _random.Pick(new List<string>() { "жж", "жжж" }));
         message = Regex.Replace(message, "Ж+", _random.Pick(new List<string>() { "ЖЖ", "ЖЖЖ" }));
-        // Localisation-End
+
+        // з > ззз
+        message = Regex.Replace(message, "з+", _random.Pick(new List<string>() { "зз", "ззз" }));
+        message = Regex.Replace(message, "З+", _random.Pick(new List<string>() { "ЗЗ", "ЗЗЗ" }));
+        // Erida-Loc-End
 
         args.Message = message;
     }
