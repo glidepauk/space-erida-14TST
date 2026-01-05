@@ -30,7 +30,6 @@ public sealed partial class TTSSystem : EntitySystem
     public override void Initialize()
     {
         _cfg.OnValueChanged(CCCVars.TTSEnabled, v => _isEnabled = v, true);
-        _cfg.OnValueChanged(CCCVars.TTSAnnounceVoiceId, v => _voiceId = v, true); // TTS-Announce SS220
 
         SubscribeLocalEvent<TransformSpeechEvent>(OnTransformSpeech);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);

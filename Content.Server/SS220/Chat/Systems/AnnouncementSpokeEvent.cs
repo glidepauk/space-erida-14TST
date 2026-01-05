@@ -9,11 +9,13 @@ public sealed class AnnouncementSpokeEvent : EntityEventArgs
     public readonly string AnnouncementSound;
     public readonly AudioParams AnnouncementSoundParams;
     public readonly string Message;
+    public readonly string VoiceId;
 
-    public AnnouncementSpokeEvent(Filter source, string announcementSound, AudioParams announcementSoundParams, string message)
+    public AnnouncementSpokeEvent(Filter source, string announcementSound, AudioParams announcementSoundParams, string message, string voiceId = "Announcer")
     {
         Source = source;
         Message = message;
+        VoiceId = voiceId;
         AnnouncementSound = announcementSound;
         AnnouncementSoundParams = announcementSoundParams;
     }

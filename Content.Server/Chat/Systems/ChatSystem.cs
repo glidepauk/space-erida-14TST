@@ -46,6 +46,7 @@ using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Server.Speech.EntitySystems;
 using Content.Shared.Station.Components;
+using Content.Shared.Corvax.TTS;
 
 namespace Content.Server.Chat.Systems;
 
@@ -392,7 +393,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? sender = null,
         bool playDefaultSound = true,
         SoundSpecifier? announcementSound = null,
-        Color? colorOverride = null)
+        Color? colorOverride = null,
+        EntityUid? user = null) // Erida
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
@@ -412,16 +414,22 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         // Orion-End
 
-        _brainRotSystem.CheckBrainRot(source, message); // Erida-change
+        // Erida-start
+        if (user != null)
+            _brainRotSystem.CheckBrainRot(user.Value, message);
+
+        string voice = "Announcer";
+        if (TryComp<TTSComponent>(user, out var ttsComp) && ttsComp.VoicePrototypeId != null)
+            voice = ttsComp.VoicePrototypeId;
+        // Erida-end
 
         var filter = _stationSystem.GetInStation(stationDataComp);
 
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, wrappedMessage, source, false, true, colorOverride);
-
         if (announcementSound != null || playDefaultSound) // Corvax-TTS
         {
             announcementSound ??= DefaultAnnouncementSound;
-            var announcementEv = new AnnouncementSpokeEvent(filter, _audio.GetSound(announcementSound), AudioParams.Default.WithVolume(-2f), message);
+            var announcementEv = new AnnouncementSpokeEvent(filter, _audio.GetSound(announcementSound), AudioParams.Default.WithVolume(-2f), message, voiceId: voice); // Erida
             RaiseLocalEvent(announcementEv);
         }
 

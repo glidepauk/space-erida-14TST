@@ -123,7 +123,7 @@ public sealed class AnnounceTTSSystem : EntitySystem
         var filePath = new ResPath($"{_fileIdx++}.wav");
         _contentRoot.AddOrUpdateFile(filePath, data);
 
-        var audioParams = AudioParams.Default.WithVolume(volume).WithRolloffFactor(1f).WithMaxDistance(float.MaxValue).WithReferenceDistance(1f);
+        var audioParams = AudioParams.Default.WithVolume(volume - 3);
         var soundPath = new SoundPathSpecifier(_prefix / filePath, audioParams);
 
         source = new TTSAudioStream(soundPath, filePath);
@@ -134,7 +134,7 @@ public sealed class AnnounceTTSSystem : EntitySystem
     private bool TryCreateAudioSource(ResPath audio, float volume,
         [NotNullWhen(true)] out TTSAudioStream? source)
     {
-        var audioParams = AudioParams.Default.WithVolume(volume).WithRolloffFactor(1f).WithMaxDistance(float.MaxValue).WithReferenceDistance(1f);
+        var audioParams = AudioParams.Default.WithVolume(volume - 3);
 
         var soundPath = new SoundPathSpecifier(audio, audioParams);
 

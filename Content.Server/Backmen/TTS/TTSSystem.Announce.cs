@@ -9,13 +9,11 @@ namespace Content.Server.Corvax.TTS;
 
 public sealed partial class TTSSystem
 {
-    private string _voiceId = "Announcer";
-
     private async void OnAnnouncementSpoke(AnnouncementSpokeEvent args)
     {
         if (!_isEnabled ||
             args.Message.Length > MaxMessageChars * 2 ||
-            !_prototypeManager.TryIndex<TTSVoicePrototype>(_voiceId, out var protoVoice))
+            !_prototypeManager.TryIndex<TTSVoicePrototype>(args.VoiceId, out var protoVoice))
         {
             RaiseNetworkEvent(new AnnounceTTSEvent(new byte[]{}, args.AnnouncementSound, args.AnnouncementSoundParams), args.Source);
             return;
@@ -42,13 +40,14 @@ public sealed partial class TTSSystem
         if (char.IsLetter(textSanitized[^1]))
             textSanitized += ".";
 
-        var textSsml = ToSsmlText(textSanitized, SoundTraits.RateFast);
-
-        var position = textSsml.LastIndexOf("Отправитель", StringComparison.InvariantCulture);
+        var position = textSanitized.LastIndexOf("Отправитель", StringComparison.InvariantCulture);
         if (position != -1)
         {
-            textSsml = textSsml[..position] + "<break time='33ms'/>" + textSsml[position..];
+            textSanitized = textSanitized[..position];
         }
-        return await _ttsManager.AnnounceConvertTextToSpeech(speaker, textSsml);
+
+        var textSsml = ToSsmlText(textSanitized, SoundTraits.RateFast);
+
+        return await _ttsManager.ConvertTextToSpeech(speaker, textSsml);
     }
 }
