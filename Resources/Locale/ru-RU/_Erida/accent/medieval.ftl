@@ -9,7 +9,7 @@ accent-medieval-words-2-3 = ХОС
 accent-medieval-words-replace-2 = военачальник
 
 accent-medieval-words-3 = ГВ
-accent-medieval-words-3-2 = Глав врач
+accent-medieval-words-3-2 = Главврач
 accent-medieval-words-3-3 = гланый врач
 accent-medieval-words-replace-3 = старший лекарь
 
@@ -94,7 +94,7 @@ accent-medieval-words-24-2 = вульпканин
 accent-medieval-words-replace-24 = собака
 
 accent-medieval-words-25 = диона
-accent-medieval-words-replace-25 = мурый дуб
+accent-medieval-words-replace-25 = мудрый дуб
 
 accent-medieval-words-26 = как дела
 accent-medieval-words-replace-26 = как поживаете
@@ -111,6 +111,8 @@ accent-medieval-words-replace-29 = дерьмо
 
 accent-medieval-words-30 = пидор
 accent-medieval-words-30-2 = гей
+accent-medieval-words-30-3 = пидорас
+accent-medieval-words-30-4 = педик
 accent-medieval-words-replace-30 = жиголо
 
 accent-medieval-words-31 = лентяй
@@ -198,7 +200,7 @@ accent-medieval-words-replace-54 = крепость
 
 accent-medieval-words-55 = оружейка
 accent-medieval-words-55-2 = оружейная
-accent-medieval-words-replace-55 = арсанал
+accent-medieval-words-replace-55 = арсенал
 
 accent-medieval-words-56 = мост
 accent-medieval-words-56-2 = мостик
@@ -211,3 +213,8 @@ accent-medieval-words-replace-57 = милорда
 
 accent-medieval-words-58 = убить
 accent-medieval-words-replace-58 = покарать
+
+accent-medieval-words-59 = капитану
+accent-medieval-words-59-2 = кэпу
+accent-medieval-words-59-3 = кепу
+accent-medieval-words-replace-59 = милорду
