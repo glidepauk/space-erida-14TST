@@ -19,3 +19,4 @@ ent-ClothingUniformJumpskirtYukataPink = розовая юката
 ent-ClothingUniformJumpskirtYukataRed = красная юката
 ent-ClothingUniformJumpskirtYukataViolet = фиолетовая юката
 ent-ClothingUniformJumpskirtYukataYellow = жёлтая юката
+ent-ClothingUniformJumpskirtKimonoMiku = кимоно мику

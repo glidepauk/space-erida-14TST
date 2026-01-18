@@ -186,3 +186,14 @@
     sprite: _Erida/Clothing/Uniforms/Jumpskirt/yukatayellow.rsi
   - type: Clothing
     sprite: _Erida/Clothing/Uniforms/Jumpskirt/yukatayellow.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtKimonoMiku
+  name: miku kimono
+  description:
+  components:
+  - type: Sprite
+    sprite: _Erida/Clothing/Uniforms/Jumpskirt/kimonomiku.rsi
+  - type: Clothing
+    sprite: _Erida/Clothing/Uniforms/Jumpskirt/kimonomiku.rsi
