@@ -150,8 +150,6 @@ public abstract partial class SharedGunSystem : EntitySystem
         }
         else
         {
-            //Entity<GunComponent> activeWeapon = (ent, gun);
-            //weaponsList.Insert(0, activeWeapon);
             var weaponsList = new List<Entity<GunComponent>>
             {
                 (ent, gun)
@@ -159,6 +157,12 @@ public abstract partial class SharedGunSystem : EntitySystem
             weaponsList.AddRange(otherGuns);
             foreach (var weapon in weaponsList)
             {
+                if (TryComp<DualWeaponsBonusComponent>(weapon, out var dual))
+                {
+                    dual.DualCurrent = true;
+                    RefreshModifiers((weapon, weapon));
+                }
+
                 weapon.Comp.ShootCoordinates = GetCoordinates(msg.Coordinates);
                 weapon.Comp.Target = GetEntity(msg.Target);
                 AttemptShoot(user.Value, weapon.Owner, weapon.Comp);
@@ -195,6 +199,11 @@ public abstract partial class SharedGunSystem : EntitySystem
             weaponsList.AddRange(otherGuns);
             foreach (var weapon in weaponsList)
             {
+                if (TryComp<DualWeaponsBonusComponent>(weapon, out var dual))
+                {
+                    dual.DualCurrent = false;
+                    RefreshModifiers((weapon, weapon));
+                }
                 StopShooting(weapon.Owner, weapon.Comp);
             }
         }
@@ -219,7 +228,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             if (!_hands.TryGetHeldItem(entity, handString, out var heldItem))
                 continue;
-            if (heldItem == activeGun || heldItem == null)
+            if (heldItem == activeGun)
                 continue;
             if (TryComp<GunComponent>(heldItem.Value, out var gunComp))
             {

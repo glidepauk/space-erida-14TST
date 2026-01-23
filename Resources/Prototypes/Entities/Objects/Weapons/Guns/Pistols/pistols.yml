@@ -79,6 +79,9 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: DualWeaponsBonus
+    minAngle: 30
+    maxAngle: 30
 
 - type: entity
   name: viper

@@ -54,6 +54,7 @@
         ents: []
   - type: StaticPrice
     price: 500
+  - type: DualWeaponsBonus
 
 - type: entity
   name: Bulldog
