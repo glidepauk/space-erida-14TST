@@ -374,7 +374,7 @@
   parent: EventHumanoidSyndiERT
   components:
     - type: GhostRole
-      name: job-name-syndicate-ert-medic
+      name: job-name-syndicate-ert-medical
       description: ghost-role-information-ert-medical-description
       rules: ghost-role-information-nonantagonist-rules
       raffle:
