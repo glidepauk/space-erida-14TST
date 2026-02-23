@@ -15,18 +15,6 @@
       minDurationOfIncident: 10
 
 - type: trait
-  id: InPain
-  name: trait-inpain-name
-  description: trait-inpain-desc
-  category: Medical
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: Pain
-  - !type:SpawnItemInHandEffect
-    item: PillCanisterSoretizone
-
-- type: trait
   id: LightweightDrunk
   name: trait-lightweight-name
   description: trait-lightweight-desc
@@ -85,24 +73,3 @@
         0: Alive
         99.9: Critical
         100: Dead
-
-- type: trait
-  id: Synthetic
-  name: trait-synth-name
-  description: trait-synth-desc
-  category: Medical
-  conditions:
-  - !type:HasCompCondition
-    component: Silicon
-    invert: true
-  - !type:HasCompCondition
-    component: BorgChassis
-    invert: true
-    tooltip: trait-condition-borg-not
-  - !type:IsSpeciesCondition
-    species: IPC
-    invert: true
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: Synth

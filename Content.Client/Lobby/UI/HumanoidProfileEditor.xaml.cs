@@ -477,6 +477,8 @@ namespace Content.Client.Lobby.UI
                 return;
             }
 
+            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
+
             // Convert profile's trait preferences (strings) to ProtoId<TraitPrototype>
             var selectedTraits = new HashSet<ProtoId<TraitPrototype>>(Profile.TraitPreferences.Count);
             foreach (var traitId in Profile.TraitPreferences)
