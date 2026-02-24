@@ -82,9 +82,6 @@ public sealed class RespawnSystem : EntitySystem
         if (HasComp<GhostComponent>(entity)) // Don't penalize user for reobserving
             return;
 
-        if (e.Mind.Comp.Session != null && _admin.IsAdmin(e.Mind.Comp.Session)) // Admins get free respawns
-            return;
-
         // Get respawn info
         var userId = e.Mind.Comp.UserId.Value;
         var respawnInfo = GetRespawnData(userId);
