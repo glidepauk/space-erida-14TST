@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using YamlDotNet.RepresentationModel;
 using Content.Server.Administration.Systems;
 using Content.Server.GameTicking;
-using Content.Server.Maps;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.Spawners.Components;
@@ -110,28 +109,6 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "dm01-entryway",
             "Exo",
-            "BackmenAspid",
-            "BackmenKettle",
-            "BackmenBox",
-            "BackmenTortuga",
-            "BackmenHive",
-            "BackmenShoukou",
-            "BackmenRook",
-            "BackmenDelta",
-            "Amber_Erida",
-            "Bagel_Erida",
-            "Convex_Erida",
-            "Elkridge_Erida",
-            "Fland_Erida",
-            "Loop_Erida",
-            "Marathon_Erida",
-            "Meta_Erida",
-            "Oasis_Erida",
-            "Omega_Erida",
-            "Packed_Erida",
-            "Plasma_Erida",
-            "Train",
-            "CorvaxSilly",
             "Snowball",
         };
 
