@@ -1,4 +1,4 @@
-﻿using Content.Shared.Atmos;
+using Content.Shared.Atmos;
 using Content.Shared.Tag;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
@@ -52,7 +52,14 @@ public sealed partial class BkmSupermatterComponent : Component
         {Gas.Tritium, 0f},
         {Gas.WaterVapor, 0f},
         {Gas.Frezon, 0f},
-        {Gas.Ammonia, 0f}
+        {Gas.Ammonia, 0f},
+        {Gas.Pluoxium, 0f},
+        {Gas.Hydrogen, 0f},
+        {Gas.BZ, 0f},
+        {Gas.Healium, 0f},
+        {Gas.Nitrium, 0f},
+        {Gas.HyperNoblium, 0f},
+        {Gas.Zauker, 0f}
     };
 
     /// <summary>
@@ -68,7 +75,14 @@ public sealed partial class BkmSupermatterComponent : Component
         [Gas.Tritium] = (TransmitModifier: 30f, HeatPenalty: 10f, PowerMixRatio: 1f),
         [Gas.WaterVapor] = (TransmitModifier: 2f, HeatPenalty: 12f, PowerMixRatio: 1f),
         [Gas.Frezon] = (TransmitModifier: 3f, HeatPenalty: -9f, PowerMixRatio: -1f),
-        [Gas.Ammonia] = (TransmitModifier: 1.5f, HeatPenalty: 1.5f, PowerMixRatio: 1.5f)
+        [Gas.Ammonia] = (TransmitModifier: 1.5f, HeatPenalty: 1.5f, PowerMixRatio: 1.5f),
+        [Gas.Pluoxium] = (TransmitModifier: -0.5f, HeatPenalty: -1.5f, PowerMixRatio: -1f),
+        [Gas.Hydrogen] = (TransmitModifier: 25f, HeatPenalty: 10f, PowerMixRatio: 1f),
+        [Gas.BZ] = (TransmitModifier: -0.2f, HeatPenalty: 1f, PowerMixRatio: 1f),
+        [Gas.Healium] = (TransmitModifier: 0.2f, HeatPenalty: 3f, PowerMixRatio: 1f),
+        [Gas.Nitrium] = (TransmitModifier: 25f, HeatPenalty: 10f, PowerMixRatio: 1f),
+        [Gas.HyperNoblium] = (TransmitModifier: 0.3f, HeatPenalty: -10f, PowerMixRatio: -1f),
+        [Gas.Zauker] = (TransmitModifier: 2f, HeatPenalty: 4f, PowerMixRatio: -1f)
     };
 
     public EntProtoId[] LightningPrototypes =

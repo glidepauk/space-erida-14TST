@@ -398,7 +398,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Amount of releasing heat per every mole of Hydrogen.
         /// </summary>
-        public const float FireH2EnergyReleased = 2800e3f; // 10 times stronger than tritium (maybe should be equal instead?)
+        public const float FireH2EnergyReleased = 852e3f; // 3 times stronger than tritium (maybe should be equal instead?)
 
         public const float H2OxygenFullBurn = 10f;
 
