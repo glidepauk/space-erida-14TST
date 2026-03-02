@@ -2367,6 +2367,7 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
+  - type: Carriable
 
 - type: entity
   parent: MobParrotBase
@@ -3074,6 +3075,7 @@
   - type: Tag
     tags:
     - VimPilot
+  - type: Carriable
 
 - type: entity
   name: corrupted corgi
@@ -3246,6 +3248,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 4
+  - type: Carriable
 
 - type: entity
   name: calico cat
@@ -3763,6 +3766,7 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
+  - type: Carriable
 
 - type: entity
   name: diona nymph
@@ -4032,3 +4036,4 @@
     understands:
     - TauCetiBasic
     - Dog
+  - type: Carriable

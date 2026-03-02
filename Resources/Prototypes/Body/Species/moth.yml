@@ -3,48 +3,48 @@
   id: Moth
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 0
+      limit: 1
       required: false
     enum.HumanoidVisualLayers.Tail:
-      limit: 1
+      limit: 10
       required: true
       default: [ MothWingsDefault ]
     enum.HumanoidVisualLayers.Chest:
-      limit: 2
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 10
       required: true
       default: [ MothAntennasDefault ]
     enum.HumanoidVisualLayers.Snout:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 1
+      limit: 10
       required: false
 
 - type: entity
@@ -199,6 +199,7 @@
     understands:
     - TauCetiBasic
     - Moffic
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

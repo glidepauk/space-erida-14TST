@@ -178,6 +178,7 @@
     understands:
     - TauCetiBasic
     - RootSpeak
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

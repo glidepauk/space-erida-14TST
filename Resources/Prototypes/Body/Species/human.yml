@@ -102,6 +102,7 @@
     understands:
     - TauCetiBasic
     - SolCommon
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

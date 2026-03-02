@@ -103,6 +103,7 @@
     understands:
     - TauCetiBasic
     - Demonic
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

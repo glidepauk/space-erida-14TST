@@ -75,6 +75,7 @@
     understands:
     - TauCetiBasic
     - Dwarven
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

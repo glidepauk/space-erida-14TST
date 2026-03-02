@@ -85,6 +85,7 @@
     understands:
     - TauCetiBasic
     - SpaceMob
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

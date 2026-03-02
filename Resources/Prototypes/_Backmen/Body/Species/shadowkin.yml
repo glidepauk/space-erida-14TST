@@ -150,7 +150,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: ShadowkinBlood
-        Quantity: 1
+        Quantity: 250
     bloodlossDamage:
       types:
         Bloodloss:
@@ -219,6 +219,7 @@
   #- type: ScaleOnSpawn
   #  scale: 0.85, 0.85
   # Erida-end
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

@@ -145,6 +145,7 @@
     understands:
     - TauCetiBasic
     - Spider
+  - type: Carriable
 
 - type: entity
   parent: OrganBase

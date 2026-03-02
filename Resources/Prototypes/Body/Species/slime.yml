@@ -182,6 +182,7 @@
     understands:
     - TauCetiBasic
     - Slime
+  - type: Carriable
 
 - type: entity
   parent: OrganBase
