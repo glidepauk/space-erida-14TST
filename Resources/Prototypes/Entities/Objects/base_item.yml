@@ -9,6 +9,18 @@
   - type: Clickable
   - type: InteractionOutline
   - type: MovedByPressure
+  # handling sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      collection: GenericPickup
+      params:
+        volume: -7
+  - type: EmitSoundOnDrop
+    sound:
+      collection: GenericDrop
+      params:
+        volume: -7
+  # handling sounds end
   - type: EmitSoundOnCollide
     sound:
       collection: WeakHit
