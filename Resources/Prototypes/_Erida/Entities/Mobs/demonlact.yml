@@ -1,0 +1,21 @@
+
+- type: entity
+  parent: [MobDemon]
+  id: DoykaArcan
+  name: lactating demon
+  description: Milk leak!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      udder:
+        maxVol: 250
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 100
+  - type: Udder
+    reagentId: Omnizine
+    quantityPerUpdate: 25
+    growthDelay: 60
+  - type: Grammar
+    attributes:
+      gender: female

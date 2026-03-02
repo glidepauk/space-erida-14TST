@@ -213,3 +213,6 @@ ui-options-hold-to-attack-melee = Атака при удержании (ближ
 ui-options-hold-to-attack-ranged = Атака при удержании (дальний)
 
 paper-sign-verb = Подписать
+
+ent-DoykaArcan = Демон лактации
+    .desc = Утечка молока!
