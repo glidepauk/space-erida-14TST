@@ -1,0 +1,30 @@
+- type: job
+  id: ArbiterCentcomm
+  name: job-name-arbiter
+  description: job-description-arbiter
+  playTimeTracker: JobArbiter
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 0 #20 hrs
+  startingGear: ArbiterGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-ccsa
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: ArbiterGear
+  equipment:
+    id: CentcomOperatorPDA
+    neck: ClothingNeckCloakArbiter
+    jumpsuit: ClothingUniformArbitr
+    shoes: ClothingShoesBootsCowboyBlack
+    gloves: ClothingHandsGlovesCombat
+    ears: ClothingHeadsetCentCom
