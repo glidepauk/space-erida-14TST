@@ -132,10 +132,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Erida/Mobs/Shark/parts.rsi
+    sprite: _ADT/Mobs/Customization/Shark/parts.rsi
   - type: VisualOrgan
     data:
-      sprite: _Erida/Mobs/Shark/parts.rsi
+      sprite: _ADT/Mobs/Customization/Shark/parts.rsi
   - type: VisualOrganMarkings
     markingData:
       group: Shark
@@ -251,5 +251,5 @@
   bodyPart: Tail
 #  speciesRestriction: [Shark]
   sprites:
-    - sprite: _Erida/Mobs/Shark/parts.rsi
+    - sprite: _ADT/Mobs/Customization/Shark/parts.rsi
       state: tail_m
