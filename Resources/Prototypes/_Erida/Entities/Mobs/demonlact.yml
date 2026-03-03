@@ -10,12 +10,28 @@
       udder:
         maxVol: 250
         reagents:
-        - ReagentId: Omnizine
+        - ReagentId: DemonMilk
           Quantity: 100
   - type: Udder
-    reagentId: Omnizine
+    reagentId: DemonMilk
     quantityPerUpdate: 25
     growthDelay: 60
   - type: Grammar
     attributes:
       gender: female
+- type: reagent
+  id: DemonMilk
+  name: reagent-name-demonmilk
+  group: Toxins
+  desc: reagent-desc-demonmilk
+  flavor: milk
+  color: "#a5c4bf"
+  physicalDesc: reagent-physical-desc-milky
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 25

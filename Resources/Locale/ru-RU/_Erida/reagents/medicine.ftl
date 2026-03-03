@@ -13,3 +13,6 @@ reagent-desc-calomel = Агрессивный очищающий и токсич
 
 reagent-name-oxandrolone = Оксандролон
 reagent-desc-oxandrolone = Эффективно лечит крупные ожоги, слабо справляясь с малыми. При передозировке вызывает обширное внутреннее кровотечение.
+
+reagent-name-demonmilk = Молчко арканы
+reagent-desc-demonmilk = Разрушает организм изнутри
