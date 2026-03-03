@@ -57,22 +57,6 @@
   components:
   - type: Inventory
     speciesId: reptilian
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: _Corvax/Mobs/Species/Reptilian/displacement.rsi # Corvax
-            state: jumpsuit-female
-      head:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Reptilian/displacement.rsi
-            state: head
-      mask:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Reptilian/displacement.rsi
-            state: mask
     displacements:
       jumpsuit:
         sizeMaps:

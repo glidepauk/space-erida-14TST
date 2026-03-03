@@ -13,6 +13,7 @@
 - type: tile
   id: Plating
   parent: BasePlating
+  deconstructTools: [ AdvancedPrying ] # White Dream
   name: tiles-plating
   sprite: /Textures/Tiles/plating.png
 
@@ -50,6 +51,7 @@
   parent: BasePlating
   name: tiles-plating
   sprite: /Textures/Tiles/plating_damaged.png
+  deconstructTools: [ AdvancedPrying ] # White Dream
   variants: 3
   placementVariants:
   - 1.0

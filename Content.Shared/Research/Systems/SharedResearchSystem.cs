@@ -73,8 +73,9 @@ public abstract class SharedResearchSystem : EntitySystem
         if (!component.SupportedDisciplines.Contains(tech.Discipline))
             return false;
 
-        if (tech.Tier > disciplineTiers[tech.Discipline])
-            return false;
+        // Erida edit
+        // if (tech.Tier > disciplineTiers[tech.Discipline])
+        //     return false;
 
         if (component.UnlockedTechnologies.Contains(tech.ID))
             return false;
@@ -132,7 +133,7 @@ public abstract class SharedResearchSystem : EntitySystem
             if (allTierTech.Count == 0)
                 break;
 
-            var percent = (float) unlockedTierTech.Count / allTierTech.Count;
+            var percent = (float)unlockedTierTech.Count / allTierTech.Count;
             if (percent < techDiscipline.TierPrerequisites[tier])
                 break;
 
