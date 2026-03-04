@@ -79,9 +79,8 @@
     speedModifierThresholds:
       50: 0.5
   - type: Stamina
-    critThreshold: 200
   - type: Bloodstream
-    bloodReagents:
+    bloodReferenceSolution:
       reagents:
       - ReagentId: Blood
         Quantity: 1
@@ -102,8 +101,6 @@
             min: 1
             max: 1
   - type: Puller
-  - type: Body
-    prototype: AnimalHuman
   - type: Butcherable
     butcheringType: Spike
     spawned:
