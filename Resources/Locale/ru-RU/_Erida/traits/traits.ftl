@@ -12,3 +12,6 @@ trait-roar-desc = Голос, не признающий полутонов.
 
 trait-medieval-name = Средневековый акцент
 trait-medieval-desc = Удивительно, что вы не скелет со щитом.
+
+trait-lactation-name = Лактация
+trait-lactation-desc = Когда желание перевешивает возможные проблемы

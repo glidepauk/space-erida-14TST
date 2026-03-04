@@ -1,0 +1,32 @@
+- type: trait
+  id: Lactation
+  name: trait-lactation-name
+  description: trait-lactation-desc
+  category: Medical
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Demon
+  effects:
+  - !type:AddCompsEffect
+    removeExisting: true
+    components:
+    - type: Udder
+      reagentId: Milk
+      quantityPerUpdate: 25
+      growthDelay: 30
+    - type: SolutionContainerManager
+      solutions:
+        udder:
+          maxVol: 100
+          reagents:
+          - ReagentId: Milk
+            Quantity: 30
+    - type: InjectableSolution
+      solution: bloodstream
+    - type: Bloodstream
+      bloodlossDamage:
+        types:
+          Bloodloss: 0.5
+      bloodlossHealDamage:
+        types:
+          Bloodloss: -1
