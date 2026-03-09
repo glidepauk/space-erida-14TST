@@ -1,0 +1,27 @@
+- type: listing
+  id: UplinkSyndicateRapier
+  name: uplink-syndicate-rapier-name
+  description: uplink-syndicate-rapier-desc
+  icon: { sprite: _Erida/Clothing/Belt/syndie_sheath.rsi, state: sheath-rapier }
+  productEntity: BeltSheathSyndieFilledBox
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 11
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkInferiorImplant
+  name: uplink-inferior-implanter-name
+  description: uplink-inferior-implanter-desc
+  icon: { sprite: /Textures/Mobs/Species/Human/parts.rsi, state: full }
+  productEntity: InferiorImplanter
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 11
+  categories:
+    - UplinkImplants
